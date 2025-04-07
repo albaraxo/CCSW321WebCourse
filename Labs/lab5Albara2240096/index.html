@@ -4,22 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Grid Layout</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Layout Task</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #3498db;
+            /* blue */
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            background-color: #333;
+            /* dark gray */
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .main {
+            display: flex;
+            margin: 1rem;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #f2f2f2;
+            padding: 1rem;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+
+        .content {
+            flex: 3;
+            margin-left: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .box {
+            background-color: #f9f9f9;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+    </style>
+
 </head>
 
 <body>
+
     <header>Header</header>
-    <nav>Navigation Bar</nav>
-    <div class="container">
-        <aside class="sidebar">Sidebar</aside>
-        <main class="content">Content Area</main>
+
+    <nav>Nav</nav>
+
+    <div class="main">
+        <aside>Sidebar</aside>
+
+        <section class="content">
+            <div class="box">Content</div>
+            <div class="box">Widget 1</div>
+            <div class="box">Widget 2</div>
+            <div class="box">Widget 3</div>
+        </section>
     </div>
-    <div class="widgets">
-        <div class="widget">Widget 1</div>
-        <div class="widget">Widget 2</div>
-        <div class="widget">Widget 3</div>
-    </div>
+
+    <footer>Footer</footer>
+
 </body>
 
 </html>
