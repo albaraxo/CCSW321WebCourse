@@ -12,14 +12,38 @@
 </head>
 
 <body class="fade-in-left">
-    <div id="content">
+    <section id="content">
         <h1>Interesting facts about animals</h1>
         <h2>(Updated Weekly!)</h2>
         <p>This week we have:</p>
-    </div>
-    <a id="hover-link" href="lions.html">Lions</a>
-    <a id="hover-link" href="tiger.html">Tiger</a>
-    <footer>
+
+    </section>
+    <section class="links">
+        <a id="hover-link" href="lions.html">Lions</a>
+        <a id="hover-link" href="tiger.html">Tiger</a>
+        <a id="hover-link" href="camelids.html">Camelids</a>
+    </section>
+    <section class="forms">
+        <h2>Choose which animal you would like to learn about next week</h2>
+        <form>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="animal" value="lion"> Lion
+                </label>
+                <label>
+                    <input type="radio" name="animal" value="tiger"> Tiger
+                </label>
+                <label>
+                    <input type="radio" name="animal" value="elephant"> Elephant
+                </label>
+                <label>
+                    <input type="radio" name="animal" value="giraffe"> Giraffe
+                </label>
+            </div><br><br>
+            <button type="submit">Submit</button>
+    </section>
+
+    <footer class="foot">
         <p>&copy; 2025 albaraxo.</p>
     </footer>
 

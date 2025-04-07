@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // When hovering over any link, fade out the content
         link.addEventListener("mouseover", function () {
             content.style.opacity = "0"; // Fades out smoothly
-            content.style.transition = "opacity 1.5s ease"; // Smooth transition
+            content.style.transition = "opacity 2.5s ease"; // Smooth transition
         });
 
         // When the mouse leaves any link, fade the content back in

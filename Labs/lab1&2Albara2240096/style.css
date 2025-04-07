@@ -8,12 +8,44 @@ body {
 
 }
 
+table {
+    margin: 50px auto;
+    /* 50px top and bottom, auto for horizontal centering */
+    border-collapse: collapse;
+    width: 50%;
+    /* Adjust width as needed */
+}
+
+
+tr:nth-child(odd) {
+    background-color: bisque;
+}
+
 .description {
     line-height: 2;
     max-width: 40em;
     margin: 0 auto;
     padding-bottom: 1rem;
 
+}
+
+.links {
+    position: relative;
+}
+
+.forms {
+    margin-top: 5%;
+
+}
+
+.foot {
+    margin-top: 10%;
+}
+
+radio-group label {
+    display: inline-block;
+    margin-right: 20px;
+    /* Adds spacing between buttons */
 }
 
 /* The entire content that will fade out */
@@ -23,6 +55,7 @@ body {
     transition: opacity 0.5s ease, transform 0.5s ease;
     /* Smooth fade-out and move effect */
 }
+
 
 /* The link that remains visible */
 a {
