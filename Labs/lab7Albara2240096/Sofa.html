@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sofa Customizer</title>
+  <script src="Sofa.js" defer></script>
+</head>
+
+<body>
+  <form action="#" method="post" aria-required="true">
+    <h4>Choose the color you would like:</h4>
+    <label><input type="radio" name="color" value="Red" required> Red</label>
+    <label><input type="radio" name="color" value="Blue" required> Blue</label>
+    <label><input type="radio" name="color" value="Orange" required> Orange</label>
+    <label><input type="radio" name="color" value="Green" required> Green</label>
+
+    <h4>Choose the design you would like:</h4>
+    <button type="button" onclick="changeDesign(1)">Design 1</button>
+    <button type="button" onclick="changeDesign(2)">Design 2</button>
+    <button type="button" onclick="changeDesign(3)">Design 3</button>
+
+    <p id="designText">This is Design 1</p>
+    <img id="sofaImage" src="sofa1.jpg" alt="Sofa Design" width="300">
+
+    <br><br>
+
+    <div>
+      <a href="LongestWord.html">Task 1</a>
+      <a href="SearchingStrings.html">Task 2</a>
+      <a href="Sofa.html">Task 3</a>
+    </div>
+
+    <br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+
+</html>

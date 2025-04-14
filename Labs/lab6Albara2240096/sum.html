@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sum Until Cancel</title>
+</head>
+
+<body>
+
+  <a href="Grade.html">Task 1</a>
+  <a href="product.html">Task 2</a>
+  <a href="sum.html">Task 3</a>
+  <a href="user.html">Task 4</a>
+
+  <script>
+    let sum = 0;
+    let input;
+
+    // Loop until the user clicks "Cancel"
+    while (true) {
+      input = prompt("Enter a number to add (or click Cancel to finish):");
+
+      let number = Number(input);
+
+      if (isNaN(number)) {
+        alert("Invalid input. Please enter a valid number.");
+      } else {
+        sum += number;
+      }
+
+      // User clicked Cancel
+      if (input === null) {
+        break;
+      }
+    }
+
+    // Display the final sum
+    alert("The total sum of the entered numbers is: " + sum);
+  </script>
+</body>
+
+</html>

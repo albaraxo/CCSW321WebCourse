@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Greeting Page</title>
+</head>
+
+<body>
+  <h2>User Greeting Form</h2>
+  <form id="nameForm">
+    <label>First Name: <input type="text" id="firstName" required></label><br><br>
+    <label>Last Name: <input type="text" id="lastName" required></label><br><br>
+    <button type="submit">Enter</button>
+  </form>
+
+  <p id="greeting"></p>
+
+
+  <a href="Grade.html">Task 1</a>
+  <a href="product.html">Task 2</a>
+  <a href="sum.html">Task 3</a>
+  <a href="user.html">Task 4</a>
+
+
+  <script>
+    document.getElementById("nameForm").addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent form from reloading the page
+
+      const firstName = document.getElementById("firstName").value;
+      const lastName = document.getElementById("lastName").value;
+
+      const today = new Date();
+      const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      const dayOfWeek = dayNames[today.getDay()];
+      const currentDate = today.toLocaleDateString(); // e.g. MM/DD/YYYY
+
+      const greeting = `Hello ${firstName} ${lastName}. Today is ${dayOfWeek} and the current date is ${currentDate}.`;
+
+      document.getElementById("greeting").textContent = greeting;
+    });
+  </script>
+</body>
+
+</html>

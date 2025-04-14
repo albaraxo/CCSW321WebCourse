@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Grade Feedback</title>
+</head>
+
+<body>
+  <a href="Grade.html">Task 1</a>
+  <a href="product.html">Task 2</a>
+  <a href="sum.html">Task 3</a>
+  <a href="user.html">Task 4</a>
+  <script>
+    // Prompt the user to enter a grade
+    let gradeInput = prompt("Enter your grade:");
+    let grade = Number(gradeInput);
+
+    // validation
+    if (isNaN(grade)) {
+      alert("Please enter a valid number.");
+    } else {
+      // Display appropriate message based on grade
+      if (grade > 100) {
+        alert("Terrific! You have over 100%!!");
+      } else if (grade === 100) {
+        alert("Super! You have 100%");
+      } else if (grade > 95) {
+        alert("Excellent work! Your score is between 95-99.");
+      } else if (grade >= 90) {
+        alert("Great work! Your score is between 90-95");
+      } else {
+        alert("Your score is below 90");
+      }
+    }
+  </script>
+</body>
+
+</html>
