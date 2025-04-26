@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Writing Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Creative Writing Generator</h1>
+
+        <form id="storyForm">
+            <label for="genre">Choose Genre:</label>
+            <select id="genre" required>
+                <option value="">Select a genre</option>
+                <option value="horror">Horror</option>
+                <option value="comedy">Comedy</option>
+                <option value="sci-fi">Sci-Fi</option>
+                <option value="romance">Romance</option>
+            </select>
+
+            <label for="character">Main Character Name:</label>
+            <input type="text" id="character" required>
+
+            <label for="setting">Setting:</label>
+            <input type="text" id="setting" required placeholder="Palace, forest, etc...">
+
+            <button type="submit">Generate Story</button>
+        </form>
+
+        <div id="storyContainer"></div>
+
+        <button id="clearStories">Clear All Stories</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
